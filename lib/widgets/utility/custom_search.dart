@@ -22,19 +22,19 @@ class SearchFields extends StatelessWidget {
         PhysicalModel(
           color: whiteclr,
           elevation: 4,
-          borderRadius: BorderRadius.all(Radius.circular(50)),
+          borderRadius: BorderRadius.all(Radius.circular(10)),
           child: SizedBox(
             width: 80.w,
-            height: 6.h,
+            height: 8.h,
           ),
         ),
         Padding(
-          padding:  EdgeInsets.symmetric(horizontal: 2.w),
+          padding:  EdgeInsets.all(15),
           child: TextFormField(
             obscureText: obscure,
             controller: controller,
             decoration: InputDecoration(
-              prefixIcon: Icon(Icons.search, size: 2.h,),
+              prefixIcon: Icon(Icons.search, size: 5.h,),
                 constraints: BoxConstraints(maxWidth: 100.w),
                 border: InputBorder.none,
             ),

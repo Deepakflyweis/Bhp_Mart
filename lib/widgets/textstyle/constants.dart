@@ -21,6 +21,12 @@ TextStyle  TxtStyleN = const TextStyle(
   color: txtblack,
   fontWeight: FontWeight.normal,
 );
+
+TextStyle  TxtStyleW = const TextStyle(
+  fontSize: 18.0,
+  color: whiteclr,
+  fontWeight: FontWeight.normal,
+);
 TextStyle TxtStyleG = const TextStyle(
   fontSize: 18.0,
   color: txtgrey,

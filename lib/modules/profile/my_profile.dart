@@ -1,8 +1,12 @@
 
 import 'package:flutter/material.dart';
 import 'package:kunal_app/essentials/essentials_files.dart';
+import 'package:kunal_app/modules/car_details/home_buy_screen.dart';
+import 'package:kunal_app/modules/home/brand.dart';
 import 'package:kunal_app/modules/login/login_screen.dart';
+import 'package:kunal_app/modules/my_adds/my_adds.dart';
 import 'package:kunal_app/modules/profile/edit_profile.dart';
+import 'package:kunal_app/modules/subscription/subscription.dart';
 import 'package:kunal_app/widgets/app_color/app_color.dart';
 import 'package:kunal_app/widgets/textstyle/constants.dart';
 import 'package:sizer/sizer.dart';
@@ -72,8 +76,11 @@ class _MyProfileState extends State<MyProfile> {
                   Divider(thickness: 2.0,color: blckclr,),
                   SizedBox(height: 5.h,),
 
+                  //Buy Car
                   InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Get.to(()=> HomeBuyScreen());
+                    },
                     child: Container(
                       height: 7.h,
                       width: 75.w,
@@ -88,8 +95,11 @@ class _MyProfileState extends State<MyProfile> {
 
                   SizedBox(height: 4.h,),
 
+                 //Sell Car
                   InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Get.to(()=> BrandScreen());
+                    },
                     child: Container(
                       height: 7.h,
                       width: 75.w,
@@ -104,8 +114,11 @@ class _MyProfileState extends State<MyProfile> {
 
                   SizedBox(height: 4.h,),
 
+                  // Subscription
                   InkWell(
-                    onTap: (){},
+                    onTap: (){
+                      Get.to(()=> SubscriptionScreen());
+                    },
                     child: Container(
                       height: 7.h,
                       width: 75.w,
@@ -115,6 +128,25 @@ class _MyProfileState extends State<MyProfile> {
                         border: Border.all(width: 1.5,color: blckclr)
                       ),
                       child: Text('Subscription',style: TxtStyleB,) ,
+                    ),
+                  ),
+
+                  SizedBox(height: 4.h,),
+
+                  //My Advertisement
+                  InkWell(
+                    onTap: (){
+                      Get.to(()=> MyAdds());
+                    },
+                    child: Container(
+                      height: 7.h,
+                      width: 75.w,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8.0),
+                        border: Border.all(width: 1.5,color: blckclr)
+                      ),
+                      child: Text('My Advertisement',style: TxtStyleB,) ,
                     ),
                   ),
                   SizedBox(height: 5.h,),
@@ -131,10 +163,6 @@ class _MyProfileState extends State<MyProfile> {
                        ),
                      ),
                    )
-
-
-
-
 
                 ],
               ),

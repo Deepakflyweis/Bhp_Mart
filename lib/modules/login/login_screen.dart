@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:kunal_app/modules/forgot_password/forgot_password.dart';
+import 'package:kunal_app/modules/home/home_index.dart';
 import 'package:kunal_app/modules/signup/signup_screen.dart';
 import 'package:kunal_app/widgets/app_color/app_color.dart';
 import 'package:kunal_app/widgets/textstyle/constants.dart';
@@ -43,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 2.h),
+                SizedBox(height: 5.h),
                 Text('Welcome to',style: headingTxtStyle,),
                 SizedBox(height: 1.h),
                 Text(
@@ -54,14 +55,14 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     Text('sign in, Or ' ,style: TxtStyleG,) ,
                     TextButton(
-                        child: Text(' Create new account.',style: TxtStyleBl, ),
+                        child: Text('Create new account.',style: TxtStyleBl, ),
                       onPressed: (){
                         Get.to(()=> Signup());
                       },
                     ),
                   ],
                 ),
-                SizedBox(height: 3.h),
+                SizedBox(height: 5.h),
 
                 //user id
                 Center(
@@ -71,8 +72,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: whiteclr,
-                      borderRadius: BorderRadius.circular(4.0),
-                      border: Border.all(width: 0.3, color: Colors.black),
+                      borderRadius: BorderRadius.circular(5.0),
+                      border: Border.all(width: 1.0, color: Colors.black),
 
                     ),
                     child: TextFormField(
@@ -86,6 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       },
                       decoration: const InputDecoration(
                         contentPadding: EdgeInsets.all(15.0),
+                        hintText: 'User id',
                         suffixIcon: Icon(Icons.mobile_screen_share_outlined,color: blckclr,),
                         border: InputBorder.none,
                       ),
@@ -103,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       color: whiteclr,
                       borderRadius: BorderRadius.circular(4.0),
-                      border: Border.all(width: 0.3, color: blckclr  ),
+                      border: Border.all(width: 1.0, color: blckclr  ),
 
                     ),
                     child: TextFormField(
@@ -139,7 +141,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 3.h),
                 CustomBlueButton(
                     onPressed: (){
-
+                      Get.offAll(()=> HomeIndex(0));
                     },
                     text:  'Sign in'
                 ),

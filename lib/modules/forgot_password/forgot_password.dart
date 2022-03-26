@@ -1,5 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/src/extension_navigation.dart';
+import 'package:kunal_app/modules/forgot_password/reset_password.dart';
 import 'package:kunal_app/widgets/app_color/app_color.dart';
 import 'package:kunal_app/widgets/textstyle/constants.dart';
 import 'package:kunal_app/widgets/utility/cutom_blue_button.dart';
@@ -84,7 +87,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 SizedBox(height: 2.h),
                 CustomBlueButton(
                     onPressed: (){
-
+                      Get.to(()=> ResetPassword());
                     },
                     text:  'Reset password'
                 ),

@@ -17,11 +17,11 @@ class CustomSmallButton extends StatelessWidget {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)) ,
         textStyle: TextStyle(color: blueclr,fontWeight: FontWeight.bold,fontSize: 16),
         child: Container(
-          height: 30,
-          width: 100,
+          height: 40,
+          width: 110,
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            color: lightblue,
+            color: whiteclr,
             borderRadius: BorderRadius.circular(8.0),
             border: Border.all(width: 1.0, color: blckclr),
 
