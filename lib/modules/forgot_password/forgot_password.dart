@@ -43,7 +43,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 Text('Forgot Password',style: headingTxtStyle,),
                 SizedBox(height: 1.h),
                 Text(
-                  ' Enter your email address and we will send you a reset instructions. ',
+                  'Enter your email address and we will send you a reset instructions. ',
                   style: TxtStyleG,maxLines: 2,),
 
                 SizedBox(height: 3.h),
@@ -55,13 +55,13 @@ class _ForgotPasswordState extends State<ForgotPassword> {
                 //Email Address
                 Center(
                   child: Container(
-                    width: 85.w,
+                    width: 90.w,
                     height: 8.h,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: whiteclr,
                       borderRadius: BorderRadius.circular(4.0),
-                      border: Border.all(width: 0.3, color: Colors.black),
+                      border: Border.all(width: 1, color: Colors.black),
 
                     ),
                     child: TextFormField(

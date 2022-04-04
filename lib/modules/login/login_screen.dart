@@ -65,65 +65,61 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 5.h),
 
                 //user id
-                Center(
-                  child: Container(
-                    width: 85.w,
-                    height: 8.h,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: whiteclr,
-                      borderRadius: BorderRadius.circular(5.0),
-                      border: Border.all(width: 1.0, color: Colors.black),
+                Container(
+                  width: 85.w,
+                  height: 8.h,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: whiteclr,
+                    borderRadius: BorderRadius.circular(5.0),
+                    border: Border.all(width: 1.0, color: Colors.black),
 
-                    ),
-                    child: TextFormField(
-                      controller: _loginId,
-                      keyboardType: TextInputType.text,
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Field can\'t be empty';
-                        }
-                        return null;
-                      },
-                      decoration: const InputDecoration(
-                        contentPadding: EdgeInsets.all(15.0),
-                        hintText: 'User id',
-                        suffixIcon: Icon(Icons.mobile_screen_share_outlined,color: blckclr,),
-                        border: InputBorder.none,
-                      ),
+                  ),
+                  child: TextFormField(
+                    controller: _loginId,
+                    keyboardType: TextInputType.text,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'Field can\'t be empty';
+                      }
+                      return null;
+                    },
+                    decoration: const InputDecoration(
+                      contentPadding: EdgeInsets.all(15.0),
+                      hintText: 'User id',
+                      suffixIcon: Icon(Icons.mobile_screen_share_outlined,color: blckclr,),
+                      border: InputBorder.none,
                     ),
                   ),
                 ),
                 SizedBox(height: 3.h),
 
                 //password
-                Center(
-                  child: Container(
-                    width: 85.w,
-                    height: 8.h,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: whiteclr,
-                      borderRadius: BorderRadius.circular(4.0),
-                      border: Border.all(width: 1.0, color: blckclr  ),
+                Container(
+                  width: 85.w,
+                  height: 8.h,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: whiteclr,
+                    borderRadius: BorderRadius.circular(4.0),
+                    border: Border.all(width: 1.0, color: blckclr  ),
 
-                    ),
-                    child: TextFormField(
-                      controller: _loginPswd,
-                      keyboardType: TextInputType.text,
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return 'Field can\'t be empty';
-                        }
-                        return null;
-                      },
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(Icons.visibility_off,color: Colors.black),
-                        hintText: 'Password',
-                        hintStyle: TxtStyleG,
-                        contentPadding: EdgeInsets.all(15.0),
-                        border: InputBorder.none,
-                      ),
+                  ),
+                  child: TextFormField(
+                    controller: _loginPswd,
+                    keyboardType: TextInputType.text,
+                    validator: (value) {
+                      if (value!.isEmpty) {
+                        return 'Field can\'t be empty';
+                      }
+                      return null;
+                    },
+                    decoration: InputDecoration(
+                      suffixIcon: Icon(Icons.visibility_off,color: Colors.black),
+                      hintText: 'Password',
+                      hintStyle: TxtStyleG,
+                      contentPadding: EdgeInsets.all(15.0),
+                      border: InputBorder.none,
                     ),
                   ),
                 ),

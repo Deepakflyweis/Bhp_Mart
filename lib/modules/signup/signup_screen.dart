@@ -114,6 +114,7 @@ class _SignupState extends State<Signup> {
                     children: [
                       Container(
                         width: 25.w,
+                        alignment: Alignment.center,
                         decoration: const BoxDecoration(
                           color: whiteclr,
                         ),
@@ -129,6 +130,7 @@ class _SignupState extends State<Signup> {
                       ),
                       Container(
                         width: 25.w,
+                        alignment: Alignment.center,
                         decoration: const BoxDecoration(
                           color: whiteclr,
                         ),
@@ -145,6 +147,7 @@ class _SignupState extends State<Signup> {
                       ),
                       Container(
                         width: 20.w,
+                        alignment: Alignment.center,
                         decoration: const BoxDecoration(
                           color: whiteclr,
                         ),
